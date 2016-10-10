@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>添加 BDUSS</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<style>
+	.scr{ height:300px; margin:0 auto} 
+	@media screen and (min-width: 1201px) { 
+	.scr {width: 400px} 
+	} 
+	/* 设置了浏览器宽度不小于1201px时 scr 显示1200px宽度 */ 
+
+	@media screen and (max-width: 1200px) { 
+	.scr {width: 400px} 
+	} 
+	/* 设置了浏览器宽度不大于1200px时 scr 显示900px宽度 */ 
+
+	@media screen and (max-width: 900px) { 
+	.scr {width: 400px;} 
+	} 
+	/* 设置了浏览器宽度不大于900px时 scr 显示200px宽度 */ 
+
+	@media screen and (max-width: 400px) { 
+	.scr {width: 280px;} 
+	} 
+	/* 设置了浏览器宽度不大于500px时 scr 显示100px宽度 */ 
+	.btn {
+		margin-top: 15px;
+	}
+	.top-title{
+		margin-top: 100px;
+	}
+	.top-content{
+		margin-top: 50px;
+	}
+	.top-end{
+		font-size: 12px;
+		margin-top: 40px;
+	}
+	.right{
+		float: right;
+		margin-right: 10px;
+	}
+</style>
+
+<body>
+	<div class="scr">
+		<div class="top-title panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">知道免费抽奖添加BDUSS</h3>
+			</div>
+			<div class="top-content panel-body">
+				<form action="add_user_info.php" method="post">
+					<input type="text" class="form-control" name="bduss" placeholder="在这里输入BDUSS">
+					<button type="submit" class="btn btn-primary btn-block">提交</button>
+				</form>
+				<div class="top-end"><a href="#" target="view_window">有问题？</a>
+				<a href="http://www.copyfu.com/" class="right" target="view_window">更多体验>></a></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
